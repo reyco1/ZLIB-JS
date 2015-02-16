@@ -1,0 +1,75 @@
+Elad Karako - code cleanup + HTML5
+Masanao Izumo:
+
+  /* zlib-inflate.js -- JavaScript implementation for the zlib inflate.
+   Version: 0.2.0
+   LastModified: Apr 12 2012
+   Copyright (C) 2012 Masanao Izumo <iz@onicos.co.jp>
+
+   This library is one of the JavaScript zlib implementation.
+   Some API's are modified from the original.
+   Only inflate API is implemented.
+
+   The original copyright notice (zlib 1.2.6):
+
+   Copyright (C) 1995-2012 Jean-loup Gailly and Mark Adler
+
+   This software is provided 'as-is', without any express or implied
+   warranty.  In no event will the authors be held liable for any damages
+   arising from the use of this software.
+
+   Permission is granted to anyone to use this software for any purpose,
+   including commercial applications, and to alter it and redistribute it
+   freely, subject to the following restrictions:
+
+   1. The origin of this software must not be misrepresented; you must not
+   claim that you wrote the original software. If you use this software
+   in a product, an acknowledgment in the product documentation would be
+   appreciated but is not required.
+   2. Altered source versions must be plainly marked as such, and must not be
+   misrepresented as being the original software.
+   3. This notice may not be removed or altered from any source distribution.
+
+   Jean-loup Gailly        Mark Adler
+   jloup@gzip.org          madler@alumni.caltech.edu
+
+
+   The data format used by the zlib library is described by RFCs (Request for
+   Comments) 1950 to 1952 in the files http://tools.ietf.org/html/rfc1950
+   (zlib format), rfc1951 (deflate format) and rfc1952 (gzip format).
+   */
+
+  /*
+   API documentation
+   ==============================================================================
+   Usage: z_stream = ZLIB.inflateInit([windowBits]);
+
+   Create the stream object for decompression.
+   See zlib.h for windowBits information.
+
+   ==============================================================================
+   Usage: decoded_string = z_stream.inflate(encoded_string [, {OPTIONS...}]);
+
+   OPTIONS:
+   next_in: decode start offset for encoded_string.
+
+   avail_in: // TODO document.  See zlib.h for the information.
+
+   avail_out: // TODO document.  See zlib.h for the information.
+
+   flush: // TODO document.  See zlib.h for the information.
+
+   Ex: decoded_string = z_stream.inflate(encoded_string);
+   decoded_string = z_stream.inflate(encoded_string,
+   {next_in: 0,
+   avail_in: encoded_string.length,
+   avail_out: 1024,
+   flush: ZLIB.Z_NO_FLUSH});
+
+   See zlib.h for more information.
+
+   ==============================================================================
+   Usage: z_stream.inflateReset();
+
+   */
+
