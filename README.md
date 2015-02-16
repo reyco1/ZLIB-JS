@@ -1,6 +1,6 @@
 # ZLIB-JS
-##its a 100% Pure-JavaScript Implementation of The ZLIB INFLATE Method.##
-###it is 100% compatible with PHP's zlib_encode Using The ZLIB_ENCODING_DEFLATE encoding###
+##it is a 100% Pure-JavaScript Implementation of The ZLIB INFLATE Method.##
+####compatible with PHP's zlib_encode Using The ZLIB_ENCODING_DEFLATE encoding####
 
 ```PHP
 <html>
